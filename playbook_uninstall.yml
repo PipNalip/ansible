@@ -1,0 +1,7 @@
+- hosts: digital_ocean
+
+  tasks:
+    - name: uninstall cowsay
+      ansible.builtin.apt:
+        name: cowsay
+        state: absent

@@ -1,0 +1,8 @@
+- hosts: digital_ocean
+
+  tasks:
+    - name: install cowsay
+      ansible.builtin.apt:
+        name: cowsay
+        state: present
+        update_cache: yes
